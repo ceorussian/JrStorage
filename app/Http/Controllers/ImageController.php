@@ -10,7 +10,7 @@ class ImageController extends Controller
     	$file = $request->image;
        $namefile = $file->getClientOriginalName();
 
-    	\Storage::put('uploads', $file);
+    	\Storage::put('public/uploads', $file);
     	return 1;
     }
 }
